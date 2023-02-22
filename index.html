@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <title>Portfolio - Chloé Deschamps</title>
+</head>
+<body>
+
+<nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fa-sharp fa-solid fa-bars fa-2xl"></i>
+    </span>
+    <div class="logo">
+        <a href="#accueil"> <img src="svg/logo-navbar.svg" alt="logo-navbar"></a>
+    </div>
+    <ul class="main-nav" id="js-menu">
+        <li><a href="#accueil" class="nav-links" id="accueil-link">Accueil</a></li>
+        <li><a href="#projets" class="nav-links" id="projets-link">Projets</a></li>
+        <li><a href="#contacts" class="nav-links" id="contacts-link">Contacts</a></li>
+    </ul> 
+</nav>
+
+<script src="js/nav.js"></script>
+<div id="content">
+<div class="logo-accueil" id="accueil">
+    <div class="part1">    
+        <img src="svg/logo-accueil.svg" alt="logo-accueil" name="logo-accueil"/>
+        <p>Étudiante en alternance dans les métiers du numérique</p>
+    </div>
+    <div class="part2">
+        <img src="svg/icon-chevron-down.svg"/>
+    </div>
+</div>
+
+<div class="sr presentation">
+    <div class="photo-p">
+        <img src="img/photo-profil.png" alt="photo-de-profil" name="photo-profil">
+    </div>
+    <div class="split-presentation"></div>
+    <div class="text-presentation">
+        <p>
+        Je m’appelle Chloé, j’ai 20 ans et je suis étudiante  en alternance à l’IUT d’Elbeuf dans les Métiers du Numérique.
+        Je suis particulièrement intéressée par l’audiovisuel, l’infographie et la photographie. Je suis une personne motivée et à l’écoute qui aime apprendre de nouvelles choses.
+        </p>
+        <div>
+            <div class="split-l"></div>
+            <a href="cv.pdf">Mon CV</a>
+        </div>
+    </div>
+</div>
+
+<div class="sr logiciels">
+    <div class="titre">
+        <h2>Outils</h2>
+        <div class="split-titre"></div>
+    </div>
+    <div class="cont">
+        <div>
+            <div class="col">
+            <div class="titre-rub">
+                <div class="rect-rub"></div>
+                <h4>Audiovisuel</h4>
+            </div>
+                <div class="cont-col">
+                    <ul>
+                        <li>Premiere Pro</li>
+                        <li>Davinci Resolve</li>
+                        <li>After Effects</li>
+                        <li>Audition</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="col">
+            <div class="titre-rub">
+                <div class="rect-rub"></div>
+                <h4>Web</h4>
+            </div>
+                <div class="cont-col">
+                    <ul>
+                        <li>HTML - CSS</li>
+                        <li>PHP</li>
+                        <li>Javascript</li>
+                        <li>BDD - MySQL</li>
+                        <li>Bootstrap</li>
+                        <li>Wordpress</li>
+                        <li>Github</li>
+                        <li>Unity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="col">
+            <div class="titre-rub">
+                <div class="rect-rub"></div>
+                <h4>Infographie - Design</h4>
+            </div>
+                <div class="cont-col">
+                    <ul>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>Figma</li>
+                        <li>Lightroom</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sr projets" id="projets">
+    <div class="titre">
+        <h2>Mes projets</h2>
+        <div class="split-titre"></div>
+    </div>
+
+    <div class="cont-button buttons">
+        <div class="button-list" id="myBtnContainer">
+            <button class="btn active" type="button" onclick="filterSelection('all')">Tous les projets</button>
+            <button class="btn" type="button" onclick="filterSelection('web')">Web</button>
+            <button class="btn" type="button" onclick="filterSelection('audiovisuel')">Audiovisuel</button>
+            <button class="btn" type="button" onclick="filterSelection('infographie')">Infographie</button>
+        </div>
+    </div>
+
+    <div class="projet-container">
+
+        <div class="projet infographie">
+            <div class="card-proj">
+                <a href="projets/atelier-ceram.php">
+                    <div class="img-scale">
+                        <img src="img/ceram_logo.png" alt="Céram">
+                        <div class="rect-rub abs"></div>
+                    </div>
+                    <div class="card-title">
+                        <p>Atelier Céram </p>
+                    </div>
+                    
+                </a>
+            </div>
+        </div>
+
+        <div class="projet web infographie">
+            <div class="card-proj">
+                <a href="projets/snippet.php">
+                    <div class="img-scale">
+                        <img src="img/snippet_logo.png" alt="Snippet">
+                        <div class="rect-rub abs"></div>
+                    </div>
+                    <div class="card-title">
+                        <p>Snippet</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="projet audiovisuel">
+            <div class="card-proj">
+                <a href="projets/doc-pesquet.php">
+                    <div class="img-scale">
+                        <img src="img/pesquet_logo.png" alt="Documentaire Thomas Pesquet">
+                        <div class="rect-rub abs"></div>
+                    </div>
+                    <div class="card-title">
+                        <p>Thomas Pesquet : Un rêve étoilé</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="projet infographie">
+            <div class="card-proj">
+                <a href="projets/beany-sound.php">
+                    <div class="img-scale">
+                        <img src="img/beany_sound_logo.png" alt="Beany Sound">
+                        <div class="rect-rub abs"></div>
+                    </div>
+                    <div class="card-title">
+                        <p>Beany Sound</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="projet infographie">
+            <div class="card-proj">
+                <a href="projets/baking-contest.php">
+                    <div class="img-scale">
+                        <img src="img/baking_contest_logo.png" alt="Baking Contest">
+                        <div class="rect-rub abs"></div>
+                    </div>
+                    <div class="card-title">
+                        <p>Baking Contest</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="projet audiovisuel">
+            <div class="card-proj">
+                <a href="projets/gen-sherlock.php">
+                    <div class="img-scale">
+                        <img src="img/sherlock_logo.png" alt="Générique Sherlock">
+                        <div class="rect-rub abs"></div>
+                    </div>
+                    <div class="card-title">
+                        <p>Générique Sherlock</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="projet infographie">
+            <div class="card-proj">
+                <a href="projets/invincible.php">
+                    <div class="img-scale">
+                        <img src="img/invincible_logo.png" alt="Invincible">
+                        <div class="rect-rub abs"></div>
+                    </div>
+                    <div class="card-title">
+                        <p>InvinciBle</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="projet audiovisuel">
+            <div class="card-proj">
+                <a href="projets/cm-imposture.php">
+                    <div class="img-scale">
+                        <img src="img/imposture_logo.png" alt="L'imposture">
+                        <div class="rect-rub abs"></div>
+                    </div>
+                    <div class="card-title">
+                        <p>L'imposture</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="projet infographie">
+            <div class="card-proj">
+                <a href="projets/ralto.php">
+                    <div class="img-scale">
+                        <img src="img/ralto_logo.png" alt="Ralto">
+                        <div class="rect-rub abs"></div>
+                    </div>
+                    <div class="card-title">
+                        <p>Ralto</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="projet infographie">
+            <div class="card-proj">
+                <a href="projets/refonte-z-event.php">
+                    <div class="img-scale">
+                        <img src="img/zevent_logo.png" alt="Refonte Z-Event">
+                        <div class="rect-rub abs"></div>
+                    </div>
+                    <div class="card-title">
+                        <p>Refonte Z-Event</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="projet infographie">
+            <div class="card-proj">
+                <a href="projets/mmi-foundry.php">
+                    <div class="img-scale">
+                        <img src="img/mmi_foundry_logo.png" alt="MMI Foundry">
+                        <div class="rect-rub abs"></div>
+                    </div>
+                    <div class="card-title">
+                        <p>MMI Foundry</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="projet web">
+            <div class="card-proj">
+                <a href="projets/sensicare.php">
+                    <div class="img-scale">
+                        <img src="img/sensicare_logo.png" alt="Sensicare">
+                        <div class="rect-rub abs"></div>
+                    </div>
+                    <div class="card-title">
+                        <p>Sensicare</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="projet audiovisuel">
+            <div class="card-proj">
+                <a href="projets/itw-diplomes.php">
+                    <div class="img-scale">
+                        <img src="img/diplomes_logo.png" alt="Cérémonie des diplômés">
+                        <div class="rect-rub abs"></div>
+                    </div>
+                    <div class="card-title">
+                        <p>Cérémonie des diplômés</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="projet infographie">
+            <div class="card-proj">
+                <a href="projets/inspiration-picturale.php">
+                    <div class="img-scale">
+                        <img src="img/picturale_logo.png" alt="Inspiration picturale">
+                        <div class="rect-rub abs"></div>
+                    </div>
+                    <div class="card-title">
+                        <p>Inspiration picturale</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="projet infographie">
+            <div class="card-proj">
+                <a href="projets/relecture-photographique.php">
+                    <div class="img-scale">
+                        <img src="img/relecture_logo.png" alt="Relecture photographique">
+                        <div class="rect-rub abs"></div>
+                    </div>
+                    <div class="card-title">
+                        <p>Relecture photographique</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/filter.js"></script>
+
+<div class="sr contacts" id="contacts">
+<div class="titre">
+        <h2>Contacts</h2>
+        <div class="split-titre"></div>
+    </div>
+    <div class="contact-container">
+        <div>
+            <p>Si mon profil vous intéresse, n’hésitez pas à me contacter !</p>
+            <ul>
+                <li>
+                    <div>
+                        <img src="svg/phone.svg" alt="telephone"></a>
+                    </div>
+                    <a href="tel:+33651650180">+336.51.65.01.80</a>
+                </li>
+                <li>
+                    <div>
+                        <img src="svg/mail.svg" alt="mail">
+                    </div>
+                    <a href="mailto:deschamps-chloe@orange.fr">deschamps-chloe@orange.fr</a>
+                </li>
+                <li>
+                    <div>
+                        <img src="svg/linkedin.svg" alt="linkedin">
+                    </div>
+                    <a href="https://www.linkedin.com/in/chloe-deschamps-344166211/">Chloé Deschamps</a>
+                </li>
+                <li>
+                    <div>
+                        <img src="svg/cv.svg" alt="mail">
+                    </div>
+                    <a href="cv.pdf">Mon CV</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--https://www.w3schools.com/howto/howto_js_filter_elements.asp-->
+
+<footer class="footer">
+    <div class="footer-menu">
+        <div class="logo">
+            <a href=#accueil> <img src="svg/logo-footer.svg" alt="logo-navbar"></a>
+        </div>
+        
+        <ul class="menu-items">
+            <li><a href="#accueil" class="nav-links">Accueil</a></li>
+            <li><a href="#projets" class="nav-links">Projets</a></li>
+            <li><a href="#contacts" class="nav-links">Contacts</a></li>
+        </ul>
+    </div>
+    
+    <div class="copyright">
+        <p>© 2023 - Chloé DESCHAMPS </p>
+    </div>
+</footer>
+</div>
+</body>
+</html>
